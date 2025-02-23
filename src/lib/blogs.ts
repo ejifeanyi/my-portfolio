@@ -44,7 +44,6 @@ export async function getAllBlogs() {
 
 export async function getBlogBySlug(slug: string): Promise<BlogType | null> {
   try {
-    // 移除可能存在的 .mdx 扩展名
     const cleanSlug = slug.replace(/\.mdx$/, '')
     return await importBlog(`${cleanSlug}.mdx`)
   } catch (error) {
