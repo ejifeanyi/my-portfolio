@@ -24,7 +24,7 @@ export const aboutParagraphs = [
 ]
 
 // blog
-export const blogHeadLine = "What I've thinking about."
+export const blogHeadLine = "What I've been thinking about."
 export const blogIntro =
   "I've written something about Data, programming and life."
 
