@@ -1,6 +1,5 @@
 
 import { Container } from '@/components/layout/Container'
-import Newsletter from '@/components/home/Newsletter'
 import Feed from '@/components/home/Feed'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
@@ -11,11 +10,10 @@ import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { GithubProjectCard } from '@/components/project/GithubProjectCard'
 import { projectHeadLine, projectIntro, projects, githubProjects, blogHeadLine, blogIntro, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
-import GithubContributions from '@/components/home/GithubCalendar'
-import GitHubSnake from '@/components/home/GitHubSnake'
 import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from "@/components/ui/icon-cloud";
 import { TweetGrid } from "@/components/home/TweetGrid";
+import GitHubSnake from '@/components/home/GitHubSnake'
 
 
 
