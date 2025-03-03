@@ -22,7 +22,7 @@ export const projects: Array<ProjectItemType> = [
   {
     name: 'watchdog',
     description:
-      'Track yout favorite stocks and get AI recommendations based on your watchlist and industry trends.',
+      'Track your favorite stocks and get AI recommendations based on your watchlist and industry trends.',
     link: { href: 'watchdog-finance.vercel.app', label: 'watchdog' },
     category: ['Website'],
     techStack: [
