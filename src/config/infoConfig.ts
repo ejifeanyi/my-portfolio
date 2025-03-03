@@ -1,8 +1,6 @@
 export * from './projects'
-export * from './changelog'
 export * from './education'
 export * from './career'
-export * from './activity'
 
 // personal info
 export const name = 'Ifeanyi J. Emmanuel'

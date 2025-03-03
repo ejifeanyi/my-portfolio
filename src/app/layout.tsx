@@ -2,23 +2,16 @@ import { type Metadata } from 'next'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/layout/Layout'
-import { Analytics } from "@/components/analytics/analytics";
+import { Analytics } from '@/components/analytics/analytics'
 import { name, headline, introduction } from '@/config/infoConfig'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
     template: `%s - ${name}`,
-    default:
-      `${name} - ${headline}`,
+    default: `${name} - ${headline}`,
   },
-  description:
-    `${introduction}`,
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed`,
-    },
-  },
+  description: `${introduction}`,
 }
 
 export default function RootLayout({

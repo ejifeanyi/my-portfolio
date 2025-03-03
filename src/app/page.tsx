@@ -18,7 +18,6 @@ import {
 } from '@/config/infoConfig'
 import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from '@/components/ui/icon-cloud'
-import { TweetGrid } from '@/components/home/TweetGrid'
 import GitHubSnake from '@/components/home/GitHubSnake'
 
 export default async function Home() {
