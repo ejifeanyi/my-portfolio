@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 const variantStyles = {
   primary:
@@ -10,25 +10,38 @@ const variantStyles = {
 
 type ButtonProps = {
   variant?: keyof typeof variantStyles
+  className?: string
 } & (
-  | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
-  | React.ComponentPropsWithoutRef<typeof Link>
+  | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined })
+  | (React.ComponentPropsWithoutRef<typeof Link> & { href: string })
 )
 
 export function Button({
   variant = 'primary',
   className,
+  href,
   ...props
 }: ButtonProps) {
-  className = clsx(
+  const finalClassName = clsx(
     'inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none',
     variantStyles[variant],
     className,
   )
 
-  return typeof props.href === 'undefined' ? (
-    <button className={className} {...props} />
-  ) : (
-    <Link className={className} {...props} />
+  if (href) {
+    return (
+      <Link
+        className={finalClassName}
+        href={href}
+        {...(props as React.ComponentPropsWithoutRef<typeof Link>)}
+      />
+    )
+  }
+
+  return (
+    <button
+      className={finalClassName}
+      {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+    />
   )
 }
