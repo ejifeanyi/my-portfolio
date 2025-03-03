@@ -1,6 +1,7 @@
-import { Card } from '@/components/shared/Card'
-import { formatDate } from '@/lib/formatDate'
-import { type BlogType } from '@/lib/blogs'
+import { BlogType } from "../../lib/blogs"
+import { formatDate } from "../../lib/formatDate"
+import { Card } from "../shared/Card"
+
 
 export function BlogCard({ blog, titleAs }: { blog: BlogType, titleAs?: keyof JSX.IntrinsicElements }) {
   const as = titleAs ?? 'h2'

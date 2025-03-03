@@ -2,12 +2,12 @@
 
 import { useContext } from 'react'
 import { useRouter } from 'next/navigation'
+import { BlogType } from '../../lib/blogs'
+import { AppContext } from '../../app/providers'
+import { Container } from './Container'
+import { Prose } from '../shared/Prose'
+import { formatDate } from '../../lib/formatDate'
 
-import { AppContext } from '@/app/providers'
-import { Container } from '@/components/layout/Container'
-import { Prose } from '@/components/shared/Prose'
-import { type BlogType } from '@/lib/blogs'
-import { formatDate } from '@/lib/formatDate'
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

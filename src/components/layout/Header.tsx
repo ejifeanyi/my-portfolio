@@ -7,15 +7,14 @@ import { usePathname } from 'next/navigation'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Container } from '@/components/layout/Container'
-import avatarImage from '@/images/avatar.jpg'
-import { navItems } from '@/config/siteConfig'
-import { ThemeToggle } from '@/components/shared/ThemeToggle'
-import { GithubRepo } from '@/components/shared/GithubRepo'
-import { name } from '@/config/infoConfig'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
-
-import TypingAnimation from '@/components/ui/typing-animation'
+import { navItems } from '../../config/siteConfig'
+import { name } from '../../config/infoConfig'
+import { Container } from './Container'
+import TypingAnimation from '../ui/typing-animation'
+import { ThemeToggle } from '../shared/ThemeToggle'
+import { GithubRepo } from '../shared/GithubRepo'
+import avatarImage from '../../images/avatar.jpg'
 
 function MobileNavItem({
   href,

@@ -2,10 +2,9 @@
 
 import {  HashIcon } from 'lucide-react'
 import { ArrowUpRight } from '@phosphor-icons/react'
-import { ProjectItemType } from '@/config/infoConfig'
-// import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
 import { Favicon } from 'favicon-stealer'
+import { ProjectItemType } from '../../config/projects'
 
 export function ProjectCard({
   project,
@@ -15,7 +14,6 @@ export function ProjectCard({
   titleAs?: keyof JSX.IntrinsicElements
 }) {
   const utmLink = `https://${project.link.href}`
-  // const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
   let Component = titleAs ?? 'h2'
   return (
     <li className="group relative flex h-full flex-col items-start">

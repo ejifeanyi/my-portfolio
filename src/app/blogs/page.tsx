@@ -1,10 +1,10 @@
 import { type Metadata } from 'next'
+import { Card } from '../../components/shared/Card'
+import { formatDate } from '../../lib/formatDate'
+import { blogHeadLine, blogIntro } from '../../config/infoConfig'
+import { BlogType, getAllBlogs } from '../../lib/blogs'
+import { SimpleLayout } from '../../components/layout/SimpleLayout'
 
-import { Card } from '@/components/shared/Card'
-import { SimpleLayout } from '@/components/layout/SimpleLayout'
-import { type BlogType, getAllBlogs } from '@/lib/blogs'
-import { formatDate } from '@/lib/formatDate'
-import { blogHeadLine, blogIntro } from '@/config/infoConfig'
 
 export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
 

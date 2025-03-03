@@ -1,14 +1,12 @@
 "use client"
 
-import { ArrowRightIcon, HashIcon } from 'lucide-react'
-import { ArrowRight, GitFork, Star, GithubLogo, BookOpen } from '@phosphor-icons/react'
-import { ProjectItemType } from '@/config/infoConfig'
-import { utm_source } from '@/config/siteConfig'
+import { ArrowRight, GitFork, Star, BookOpen } from '@phosphor-icons/react'
 import Link from 'next/link'
+import { ProjectItemType } from '../../config/projects'
 
 
 export function GithubProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
-  const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
+  const utmLink = `https://${project.link.href}`
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>

@@ -1,8 +1,8 @@
 "use client"
 
 import Link from 'next/link'
-import { email, socialLinks } from '@/config/infoConfig'
-import { CustomIcon } from '@/components/shared/CustomIcon'
+import { email, socialLinks } from '../../config/infoConfig'
+import { CustomIcon } from '../shared/CustomIcon'
 
 
 export default function SocialLinks() {

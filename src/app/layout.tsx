@@ -1,10 +1,10 @@
 import { type Metadata } from 'next'
+import '../styles/tailwind.css'
 
-import { Providers } from '@/app/providers'
-import { Layout } from '@/components/layout/Layout'
-import { Analytics } from '@/components/analytics/analytics'
-import { name, headline, introduction } from '@/config/infoConfig'
-import '@/styles/tailwind.css'
+import { Providers } from './providers'
+import { Layout } from '../components/layout/Layout'
+import { Analytics } from '../components/analytics/analytics'
+import { headline, introduction, name } from '../config/infoConfig'
 
 export const metadata: Metadata = {
   title: {

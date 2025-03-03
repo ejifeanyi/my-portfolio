@@ -1,9 +1,9 @@
 import { type Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { getBlogBySlug } from '../../../lib/blogs'
+import { getMDXContent } from '../../../lib/mdx'
+import { BlogLayout } from '../../../components/layout/BlogLayout'
 
-import { getBlogBySlug } from '@/lib/blogs'
-import { getMDXContent } from '@/lib/mdx'
-import { BlogLayout } from '@/components/layout/BlogLayout'
 
 export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
 

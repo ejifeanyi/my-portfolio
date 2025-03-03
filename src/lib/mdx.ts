@@ -1,7 +1,7 @@
 import { compileMDX } from 'next-mdx-remote/rsc'
 import { promises as fs } from 'fs'
 import path from 'path'
-import { mdxComponents } from '@/components/shared/MdxComponents'
+import { mdxComponents } from '../components/shared/MdxComponents'
 
 export async function getMDXContent(slug: string) {
   const filePath = path.join(process.cwd(), 'src/content/blog', `${slug}.mdx`)

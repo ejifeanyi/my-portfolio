@@ -1,11 +1,9 @@
 import { type Metadata } from 'next'
-import { SimpleLayout } from '@/components/layout/SimpleLayout'
-
-import { projectHeadLine, projectIntro, projects, githubProjects } from '@/config/infoConfig'
-
-import { ProjectCard } from '@/components/project/ProjectCard'
-import { GithubProjectCard } from '@/components/project/GithubProjectCard'
-import { CustomIcon } from '@/components/shared/CustomIcon'
+import { githubProjects, projectHeadLine, projectIntro, projects } from '../../config/projects'
+import { SimpleLayout } from '../../components/layout/SimpleLayout'
+import { ProjectCard } from '../../components/project/ProjectCard'
+import { CustomIcon } from '../../components/shared/CustomIcon'
+import { GithubProjectCard } from '../../components/project/GithubProjectCard'
 
 export const metadata: Metadata = {
   title: 'Projects',

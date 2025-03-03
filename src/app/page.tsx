@@ -1,12 +1,12 @@
-import { Container } from '@/components/layout/Container'
-import Career from '@/components/home/Career'
-import Education from '@/components/home/Education'
-import SocialLinks from '@/components/home/SocialLinks'
-import { headline, introduction } from '@/config/infoConfig'
-import { BlogCard } from '@/components/home/BlogCard'
-import { getAllBlogs, type BlogType } from '@/lib/blogs'
-import { ProjectCard } from '@/components/project/ProjectCard'
-import { GithubProjectCard } from '@/components/project/GithubProjectCard'
+import { Container } from '../components/layout/Container'
+import Career from '../components/home/Career'
+import Education from '../components/home/Education'
+import SocialLinks from '../components/home/SocialLinks'
+import { headline, introduction } from '../config/infoConfig'
+import { BlogCard } from '../components/home/BlogCard'
+import { getAllBlogs, type BlogType } from '../lib/blogs'
+import { ProjectCard } from '../components/project/ProjectCard'
+import { GithubProjectCard } from '../components/project/GithubProjectCard'
 import {
   projectHeadLine,
   projectIntro,
@@ -15,10 +15,10 @@ import {
   blogHeadLine,
   blogIntro,
   techIcons,
-} from '@/config/infoConfig'
-import { CustomIcon } from '@/components/shared/CustomIcon'
-import IconCloud from '@/components/ui/icon-cloud'
-import GitHubSnake from '@/components/home/GitHubSnake'
+} from '../config/infoConfig'
+import { CustomIcon } from '../components/shared/CustomIcon'
+import IconCloud from '../components/ui/icon-cloud'
+import GitHubSnake from '../components/home/GitHubSnake'
 
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)

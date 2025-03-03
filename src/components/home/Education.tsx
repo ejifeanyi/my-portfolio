@@ -2,8 +2,8 @@
 
 
 import { Student } from '@phosphor-icons/react'
-import { EducationItemType, educationList } from '@/config/infoConfig'
-import { CustomIcon } from '@/components/shared/CustomIcon'
+import { CustomIcon } from '../shared/CustomIcon'
+import { EducationItemType, educationList } from '../../config/education'
 
 
 
