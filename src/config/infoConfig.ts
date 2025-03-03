@@ -1,5 +1,4 @@
 export * from './projects'
-export * from './friends'
 export * from './changelog'
 export * from './education'
 export * from './career'
@@ -52,11 +51,11 @@ export const socialLinks: Array<SocialLinkType> = [
     icon: 'github',
     href: 'https://github.com/ejifeanyi',
   },
-  {
-    name: 'Ko-fi',
-    icon: 'coffee',
-    href: 'https://ko-fi.com/coreychiu',
-  },
+  // {
+  //   name: 'Ko-fi',
+  //   icon: 'coffee',
+  //   href: 'https://ko-fi.com/coreychiu',
+  // },
 ]
 
 // https://simpleicons.org/
